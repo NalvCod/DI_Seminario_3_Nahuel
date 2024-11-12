@@ -93,341 +93,361 @@
         android:layout_marginTop="20dp"
         android:textSize="20dp"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imagen1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titulo"
-        android:layout_margin="20dp">
-
-        <ImageView
-            android:id="@+id/fotito1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tituloImagen"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/tituloImagen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo Imagen 1"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="@id/fotito1"
-            app:layout_constraintTop_toBottomOf="@+id/fotito1" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Soy un texto"
-            app:layout_constraintBottom_toTopOf="@+id/textView5"
-            app:layout_constraintStart_toStartOf="@+id/tituloImagen"
-            app:layout_constraintTop_toBottomOf="@+id/tituloImagen" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Más info"
-            app:layout_constraintStart_toStartOf="@id/fotito1"
-            app:layout_constraintEnd_toEndOf="@id/fotito1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       app:layout_constraintTop_toBottomOf="@id/titulo"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imagen2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/titulo">
+           <androidx.constraintlayout.widget.Guideline
+               android:id="@+id/guideline2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               app:layout_constraintGuide_percent="0.5"/>
 
-        <ImageView
-            android:id="@+id/fotito2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tituloImagen2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/imagen1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintEnd_toStartOf="@+id/guideline2"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               android:layout_margin="20dp">
 
-        </ImageView>
+               <ImageView
+                   android:id="@+id/fotito1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toTopOf="@+id/tituloImagen"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:srcCompat="@tools:sample/avatars">
 
-        <TextView
-            android:id="@+id/tituloImagen2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo Imagen 1"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/fotito2"
-            app:layout_constraintStart_toStartOf="@+id/fotito2"
-            app:layout_constraintTop_toBottomOf="@+id/fotito2" />
+               </ImageView>
 
-        <TextView
-            android:id="@+id/texto2num1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Soy un texto"
-            app:layout_constraintBottom_toTopOf="@+id/texto2num2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tituloImagen2" />
+               <TextView
+                   android:id="@+id/tituloImagen"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Titulo Imagen 1"
+                   android:textSize="20dp"
+                   app:layout_constraintStart_toStartOf="@id/fotito1"
+                   app:layout_constraintTop_toBottomOf="@+id/fotito1" />
 
-        <TextView
-            android:id="@+id/texto2num2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Más información"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto2num1" />
+               <TextView
+                   android:id="@+id/textView4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Soy un texto"
+                   app:layout_constraintBottom_toTopOf="@+id/textView5"
+                   app:layout_constraintStart_toStartOf="@+id/tituloImagen"
+                   app:layout_constraintTop_toBottomOf="@+id/tituloImagen" />
 
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imagen3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/imagen2">
-
-        <ImageView
-            android:id="@+id/fotito3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tituloImagen3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/tituloImagen3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo Imagen 1"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/fotito3"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/fotito3"
-            app:layout_constraintTop_toBottomOf="@+id/fotito3" />
-
-        <TextView
-            android:id="@+id/texto3num1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Soy un texto"
-            app:layout_constraintBottom_toTopOf="@+id/texto3num2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tituloImagen3" />
-
-        <TextView
-            android:id="@+id/texto3num2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Más información"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto3num1" />
+               <TextView
+                   android:id="@+id/textView5"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Más info"
+                   app:layout_constraintStart_toStartOf="@id/fotito1"
+                   app:layout_constraintEnd_toEndOf="@id/fotito1"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imagen4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagen1">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/imagen2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toEndOf="@+id/guideline2"
+               app:layout_constraintStart_toStartOf="@id/guideline2"
+               app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/fotito4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tituloImagen4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars">
+               <ImageView
+                   android:id="@+id/fotito2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toTopOf="@+id/tituloImagen2"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:srcCompat="@tools:sample/avatars">
 
-        </ImageView>
+               </ImageView>
 
-        <TextView
-            android:id="@+id/tituloImagen4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo Imagen 1"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/fotito4"
-            app:layout_constraintStart_toStartOf="@+id/fotito4"
-            app:layout_constraintTop_toBottomOf="@+id/fotito4" />
+               <TextView
+                   android:id="@+id/tituloImagen2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Titulo Imagen 1"
+                   android:textSize="20dp"
+                   app:layout_constraintEnd_toEndOf="@+id/fotito2"
+                   app:layout_constraintStart_toStartOf="@+id/fotito2"
+                   app:layout_constraintTop_toBottomOf="@+id/fotito2" />
 
-        <TextView
-            android:id="@+id/texto4num1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Soy un texto"
-            app:layout_constraintBottom_toTopOf="@+id/texto4num2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tituloImagen4" />
+               <TextView
+                   android:id="@+id/texto2num1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="Soy un texto"
+                   app:layout_constraintBottom_toTopOf="@+id/texto2num2"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/tituloImagen2" />
 
-        <TextView
-            android:id="@+id/texto4num2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Más información"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto4num1" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imagen5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@id/imagen4">
-
-        <ImageView
-            android:id="@+id/fotito5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tituloImagen5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars">
-
-        </ImageView>
-
-        <TextView
-            android:id="@+id/tituloImagen5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo Imagen 5"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fotito5" />
-
-        <TextView
-            android:id="@+id/texto5num1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Soy un texto"
-            app:layout_constraintBottom_toTopOf="@+id/texto5num2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tituloImagen5" />
-
-        <TextView
-            android:id="@+id/texto5num2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Más información"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto5num1" />
+               <TextView
+                   android:id="@+id/texto2num2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Más información"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/texto2num1" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/imagen6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imagen4">
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/imagen3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="@+id/guideline2"
+               app:layout_constraintTop_toBottomOf="@id/imagen2">
 
-        <ImageView
-            android:id="@+id/fotito6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/tituloImagen6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars">
+               <ImageView
+                   android:id="@+id/fotito3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toTopOf="@+id/tituloImagen3"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:srcCompat="@tools:sample/avatars">
 
-        </ImageView>
+               </ImageView>
 
-        <TextView
-            android:id="@+id/tituloImagen6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titulo Imagen 6"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/fotito6"
-            app:layout_constraintStart_toStartOf="@+id/fotito6"
-            app:layout_constraintTop_toBottomOf="@+id/fotito6" />
+               <TextView
+                   android:id="@+id/tituloImagen3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Titulo Imagen 1"
+                   android:textSize="20dp"
+                   app:layout_constraintEnd_toEndOf="@+id/fotito3"
+                   app:layout_constraintHorizontal_bias="1.0"
+                   app:layout_constraintStart_toStartOf="@+id/fotito3"
+                   app:layout_constraintTop_toBottomOf="@+id/fotito3" />
 
-        <TextView
-            android:id="@+id/texto6num1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Soy un texto"
-            app:layout_constraintBottom_toTopOf="@+id/texto6num2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tituloImagen6" />
+               <TextView
+                   android:id="@+id/texto3num1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="Soy un texto"
+                   app:layout_constraintBottom_toTopOf="@+id/texto3num2"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/tituloImagen3" />
 
-        <TextView
-            android:id="@+id/texto6num2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Más información"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto6num1" />
+               <TextView
+                   android:id="@+id/texto3num2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Más información"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/texto3num1" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"/>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/imagen4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               app:layout_constraintEnd_toStartOf="@+id/guideline2"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/imagen1">
+
+               <ImageView
+                   android:id="@+id/fotito4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toTopOf="@+id/tituloImagen4"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:srcCompat="@tools:sample/avatars">
+
+               </ImageView>
+
+               <TextView
+                   android:id="@+id/tituloImagen4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Titulo Imagen 1"
+                   android:textSize="20dp"
+                   app:layout_constraintEnd_toEndOf="@+id/fotito4"
+                   app:layout_constraintStart_toStartOf="@+id/fotito4"
+                   app:layout_constraintTop_toBottomOf="@+id/fotito4" />
+
+               <TextView
+                   android:id="@+id/texto4num1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="Soy un texto"
+                   app:layout_constraintBottom_toTopOf="@+id/texto4num2"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/tituloImagen4" />
+
+               <TextView
+                   android:id="@+id/texto4num2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Más información"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/texto4num1" />
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/imagen5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="@+id/guideline2"
+               app:layout_constraintTop_toBottomOf="@id/imagen4">
+
+               <ImageView
+                   android:id="@+id/fotito5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toTopOf="@+id/tituloImagen5"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:srcCompat="@tools:sample/avatars">
+
+               </ImageView>
+
+               <TextView
+                   android:id="@+id/tituloImagen5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Titulo Imagen 5"
+                   android:textSize="20dp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/fotito5" />
+
+               <TextView
+                   android:id="@+id/texto5num1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="Soy un texto"
+                   app:layout_constraintBottom_toTopOf="@+id/texto5num2"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/tituloImagen5" />
+
+               <TextView
+                   android:id="@+id/texto5num2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Más información"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/texto5num1" />
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/imagen6"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:layout_marginTop="20dp"
+               app:layout_constraintEnd_toStartOf="@+id/guideline2"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/imagen4">
+
+               <ImageView
+                   android:id="@+id/fotito6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:layout_constraintBottom_toTopOf="@+id/tituloImagen6"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:srcCompat="@tools:sample/avatars">
+
+               </ImageView>
+
+               <TextView
+                   android:id="@+id/tituloImagen6"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Titulo Imagen 6"
+                   android:textSize="20dp"
+                   app:layout_constraintEnd_toEndOf="@+id/fotito6"
+                   app:layout_constraintStart_toStartOf="@+id/fotito6"
+                   app:layout_constraintTop_toBottomOf="@+id/fotito6" />
+
+               <TextView
+                   android:id="@+id/texto6num1"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:text="Soy un texto"
+                   app:layout_constraintBottom_toTopOf="@+id/texto6num2"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/tituloImagen6" />
+
+               <TextView
+                   android:id="@+id/texto6num2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Más información"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/texto6num1" />
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

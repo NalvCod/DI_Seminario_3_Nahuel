@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio_6">
+
+   <LinearLayout
+       android:id="@+id/layoutPrincipal"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent">
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="PM_Tema 3 1"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Seminario 3"
+         android:layout_margin="20dp"
+          android:layout_gravity="center">
+
+      </TextView>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 1"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 2"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 3"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 4"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 5"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 6"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 7"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 8"
+          android:layout_weight="6"
+          >
+
+      </Button>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="EJERCICIO 9"
+          android:layout_weight="6"
+          >
+
+      </Button>
+   </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
