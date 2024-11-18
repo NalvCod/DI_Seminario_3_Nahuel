@@ -36,10 +36,31 @@
         android:text="Ingresa un número: "
         ></TextView>
 
-    <Button
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/formnombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/texto"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Texto que vamos a pasar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/formnombre"
         app:layout_constraintStart_toStartOf="parent"
         android:text="ENVIAR INFORMACIÓN"
         android:layout_marginTop="30dp">
