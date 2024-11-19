@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Barra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/design_default_color_secondary_variant"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="EJERCICIO 3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="25sp">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/formnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        app:layout_constraintTop_toBottomOf="@id/Barra"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Texto que vamos a pasar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/insertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/formnombre"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="INSERTAR DATO">
+    </Button>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/insertar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ENVIAR INFORMACIÓN">
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
