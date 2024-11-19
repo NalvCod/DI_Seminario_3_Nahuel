@@ -7,4 +7,43 @@
     android:layout_height="match_parent"
     tools:context=".Ejercicio3_3">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Barra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/design_default_color_secondary_variant"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="EJERCICIO 3"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="25sp">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La cadena pasada es: "
+        app:layout_constraintTop_toBottomOf="@id/Barra"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+    <TextView
+        android:id="@+id/cadena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/texto"
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

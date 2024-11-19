@@ -31,7 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
-        android:text="HAS GANADO:)">
+        android:textSize="30dp"
+        android:text=":)">
     </TextView>
 
     <androidx.constraintlayout.widget.ConstraintLayout

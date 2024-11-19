@@ -24,7 +24,7 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintTop_toTopOf="parent"
-          android:background="@color/material_dynamic_neutral50">
+          android:background="@color/design_default_color_secondary_variant">
 
          <TextView
              android:layout_width="match_parent"
@@ -47,9 +47,18 @@
          android:textSize="30dp"
          android:text="SEMINARIO 3"
          android:gravity="center"
-         android:layout_marginVertical="50dp">
+         android:layout_marginVertical="30dp">
 
       </TextView>
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:orientation="vertical">
+
+
+
+      </ScrollView>
 
       <Button
           android:id="@+id/ej1"
@@ -58,7 +67,8 @@
           android:text="EJERCICIO 1"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary_variant"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
@@ -70,7 +80,9 @@
           android:text="EJERCICIO 2"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary"
+          android:layout_marginHorizontal="10dp"
+          android:shadowColor="@color/black"
           >
 
       </Button>
@@ -82,7 +94,8 @@
           android:text="EJERCICIO 3"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary_variant"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
@@ -94,7 +107,8 @@
           android:text="EJERCICIO 4"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
@@ -106,7 +120,8 @@
           android:text="EJERCICIO 5"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary_variant"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
@@ -118,7 +133,8 @@
           android:text="EJERCICIO 6"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
@@ -130,7 +146,9 @@
           android:text="EJERCICIO 7"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary_variant"
+          android:layout_marginHorizontal="10dp"
+
           >
 
       </Button>
@@ -142,7 +160,8 @@
           android:text="EJERCICIO 8"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
@@ -154,7 +173,8 @@
           android:text="EJERCICIO 9"
           android:textSize="20dp"
           android:padding="10dp"
-          android:layout_weight="6"
+          android:backgroundTint="@color/design_default_color_secondary_variant"
+          android:layout_marginHorizontal="10dp"
           >
 
       </Button>
